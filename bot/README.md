@@ -4,7 +4,7 @@ This telegram bot that requests doujins or random doujins from [exhentai](https:
 
 This bot was made for personal use to avoid copy pasting entire galleries into telegram. This was mostly coded on late nights so excuse the mess.
 
-*This is a way a fork of my private telegram bot, I modified some critical parts of it, I have quickly tested it and it seems to work okay. But I can't guarentee stability.*
+*This is in a way a fork of my private telegram bot, I modified some critical parts of it, I have quickly tested it and it seems to work okay. But I can't guarentee stability.*
 
 ## Features
 
