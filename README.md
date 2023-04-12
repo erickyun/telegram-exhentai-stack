@@ -2,6 +2,18 @@
 
 This project is a weekend botch job, it work as it is right now but its far far from being ideal/optimized/clean.
 
+## How to use
+
+### Requirements
+
+- [docker](https://www.docker.com/)
+- [docker-compose](https://docs.docker.com/compose/)
+
+### Setup
+
+- Clone the repository
+- If you want to go and just use the bot with the api, fill in the ENV variables in the docker-compose file and run `docker-compose up -d`
+
 ## Telegram exhentai/e-hentai bot
 
 This is a repository containing 2 projects :
