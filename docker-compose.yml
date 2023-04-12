@@ -1,0 +1,28 @@
+version: '3'
+services:
+  telegram-bot-api:
+    image: telegram-bot-api:latest
+    build: ./api
+    container_name: telegram-bot-api
+    environment:
+      - MONGO_URI_PROD=
+      - API_KEY=
+      - PORT=8000
+      - NODE_ENV=production
+      - EXHENTAI_COOKIE=
+    ports:
+      - 8000:8000
+  telegram-bot:
+    image: telegram-bot:latest
+    build: ./bot
+    container_name: telegram-bot
+    environment:
+      - TELEGRAM_BOT_TOKEN=
+      - TELEGRAPH_ACCESS_TOKEN=
+      - API_KEY=
+      - API_BASE_URL=http://telegram-bot-api:8000/api/v1
+      - TELEGRAPH_USERNAME=
+      - TELEGRAPH_AUTHOR_URL=
+      - OWNER_ID=
+    depends_on:
+      - telegram-bot-api
